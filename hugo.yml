@@ -11,6 +11,7 @@ params:
   github_repo: "https://github.com/ocelot-cloud/docs"
   search:
     enable: true
+    engine: lunr
 
 markup:
   goldmark:
@@ -25,9 +26,13 @@ menu:
     - name: "Blog"
       url: "/blog/"
       weight: 20
+    - name: "Search"
+      url: "/search/"
+      weight: 30
 
 outputs:
-  home: ["HTML", "RSS", "JSON"] # json is needed for search
+  home: ["HTML", "RSS", "JSON"]  # JSON needed for search
+  section: ["HTML", "RSS", "JSON"]
 
 taxonomies:
   tag: "tags"

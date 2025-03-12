@@ -12,6 +12,8 @@ params:
   search:
     enable: true
     engine: lunr
+  ui:
+    themeVariant: "dark" # TODO: not working?
 
 markup:
   goldmark:

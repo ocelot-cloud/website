@@ -1,6 +1,6 @@
-baseURL: "http://localhost/"
+baseURL: "https://docs.ocelot-cloud.org/"
 languageCode: "en-us"
-title: "My Documentation Site"
+title: "Ocelot Docs"
 
 module:
   proxy: "direct"
@@ -8,7 +8,9 @@ module:
     - path: "github.com/google/docsy"
 
 params:
-  github_repo: "https://github.com/your-username/my-docs"
+  github_repo: "https://github.com/ocelot-cloud/docs"
+  search:
+    enable: true
 
 markup:
   goldmark:
@@ -25,7 +27,7 @@ menu:
       weight: 20
 
 outputs:
-  home: ["HTML", "RSS", "JSON"] # Enables search indexing
+  home: ["HTML", "RSS", "JSON"] # json is needed for search
 
 taxonomies:
   tag: "tags"

@@ -1,0 +1,32 @@
+baseURL: "http://localhost/"
+languageCode: "en-us"
+title: "My Documentation Site"
+
+module:
+  proxy: "direct"
+  imports:
+    - path: "github.com/google/docsy"
+
+params:
+  github_repo: "https://github.com/your-username/my-docs"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Allows raw HTML in Markdown
+
+menu:
+  main:
+    - name: "Docs"
+      url: "/docs/"
+      weight: 10
+    - name: "Blog"
+      url: "/blog/"
+      weight: 20
+
+outputs:
+  home: ["HTML", "RSS", "JSON"] # Enables search indexing
+
+taxonomies:
+  tag: "tags"
+  category: "categories"

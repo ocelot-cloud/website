@@ -10,7 +10,7 @@ Our mission is to create a self-hosting, open source solution that provides user
 * Collection of user information that is not technically required will never be forced. We may ask the user to provide the data voluntarily as it is helpful feedback, but there is always the option to decline without repercussions. If the user consents, such collected data will be strictly anonymized, i.e. no personal information will be stored.
 * We will never sell users' personal information to third parties or use it to train AI.
 Users are always informed about what data is being collected, if any.
-* We strongly oppose legislation that unjustifiably invades users' privacy. This includes [data retention](https://en.wikipedia.org/wiki/Data_retention) laws that force companies to monitor citizens on the basis of broad suspicion. We are developing Ocelot-Cloud to promote self-hosted infrastructure as a way to empower users to reduce such data collection enforcement.
+* We strongly oppose legislation that unjustifiably invades users' privacy. This includes <a href="https://en.wikipedia.org/wiki/Data_retention" target="_blank" rel="noopener noreferrer">data retention</a> laws that force companies to monitor citizens on the basis of broad suspicion. We are developing Ocelot-Cloud to promote self-hosted infrastructure as a way to empower users to reduce such data collection enforcement.
 * We do not patronize our users, although we encourage self-hosting and preferably open source apps, they are free to host Ocelot-Cloud on external servers and install proprietary apps.
 
 ## Ethical Business

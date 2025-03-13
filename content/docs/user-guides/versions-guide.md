@@ -3,7 +3,7 @@ title: "App Store Version Creation Guide"
 tags: ["store", "app"]
 ---
 
-This article explains how to create new apps and versions in the [App Store](https://store.ocelot-cloud.org/).
+This article explains how to create new apps and versions in the <a href="https://store.ocelot-cloud.org/" target="_blank" rel="noopener noreferrer">App Store</a>.
 
 ## What is a version?
 

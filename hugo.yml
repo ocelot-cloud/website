@@ -14,11 +14,14 @@ params:
     engine: lunr
   ui:
     themeVariant: "dark" # TODO: not working?
+    showLightDarkModeMenu: true
 
 markup:
   goldmark:
     renderer:
       unsafe: true  # Allows raw HTML in Markdown
+  highlight:
+    noClasses: false
 
 menu:
   main:

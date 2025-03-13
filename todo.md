@@ -1,6 +1,5 @@
 ### open todos
 
-* dark theme
 * add search bar
 * add existing contents to here
 * remove blog?

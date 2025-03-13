@@ -9,13 +9,10 @@ module:
 
 params:
   github_repo: "https://github.com/ocelot-cloud/docs"
-  search:
-    enable: true
-    engine: lunr
   ui:
     themeVariant: "dark" # TODO: not working?
     showLightDarkModeMenu: true
-    search: true
+    sidebar_search_disable: true
   offlineSearch: true
 
 markup:
@@ -30,9 +27,10 @@ menu:
     - name: "Docs"
       url: "/docs/"
       weight: 10
-    - name: "Blog"
-      url: "/blog/"
-      weight: 20
+    # Might become interesting later, e.g. when alpha version is announced
+    #- name: "Blog"
+    #  url: "/blog/"
+    #  weight: 20
 
 outputs:
   home: ["HTML", "RSS", "JSON"]  # JSON needed for search

@@ -24,13 +24,12 @@ markup:
 
 menu:
   main:
+    - name: "Overview"
+      url: "/overview/"
+      weight: 10
     - name: "Docs"
       url: "/docs/"
-      weight: 10
-    # Might become interesting later, e.g. when alpha version is announced
-    #- name: "Blog"
-    #  url: "/blog/"
-    #  weight: 20
+      weight: 20
 
 outputs:
   home: ["HTML", "RSS", "JSON"]  # JSON needed for search

@@ -10,7 +10,7 @@ module:
 params:
   github_repo: "https://github.com/ocelot-cloud/docs"
   ui:
-    themeVariant: "dark" # TODO: not working?
+    themeVariant: "dark"
     showLightDarkModeMenu: true
     sidebar_search_disable: true
   offlineSearch: true

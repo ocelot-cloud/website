@@ -31,9 +31,3 @@ Some vendors offer self-hosted infrastructure management tools. You install thei
 ## Ocelot Cloud
 
 For all of the above reasons, the Ocelot-Cloud was created. It's a self-hosted, easy-to-use, open source infrastructure management platform designed to deliver customizable digital solutions. By self-hosting with Ocelot Cloud, you not only increase the security of your data, but also significantly reduce costs compared to traditional cloud provider fees.
-
-While open source software offers immense benefits, generating revenue solely from it can be challenging because it is free to use and share. To ensure continued development and sustainability, we have adopted an Open Core business model. This approach involves offering a fully open source and freely available Community Edition of Ocelot-Cloud, alongside a Premium Edition with optional proprietary features that can be purchased. This model allows us to fund continued innovation while keeping essential features available to all users.
-
-Our commitment to non-profit ethics strictly prohibits us from introducing any malicious code into our products, minimizing the risk of black-boxing. We also prioritize user freedom by making it easy to migrate between the Community and Premium editions. If you decide that the Premium Edition no longer meets your needs, you can seamlessly switch back to the open source Community Edition, effectively minimizing potential vendor lock-in.
-
-This approach strikes a fair balance between software ethics, customer interests, and financial sustainability.

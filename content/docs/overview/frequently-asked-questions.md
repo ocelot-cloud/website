@@ -55,11 +55,6 @@ Ocelot-Cloud is designed to be resource efficient, so it can run on minimal hard
 
 We plan to establish Ocelot-Cloud as a non-profit organization. This structure ensures we remain committed to open-source principles and ethical business practices, prioritizing user interests and long-term sustainability over profit.
 
-### As a cloud provider, can I make money through Ocelot-Cloud as SaaS?
-
-Yes. We actively encourage cloud providers to do so . Cloud providers are part of the solution. crucial part of the  ecosystem. The communicty edition is pen source, which allows free hosting anyway. But also the Enterprise edition will be distributed under license terms, allowing free hosting without any extra cost or beurocracy.
-maybe also explain saas?
-
 ### Can I host Ocelot Cloud for others?
 
-Yes. The goal is to make Ocelot-Cloud as easily and widely available as possible. Cloud providers are an important part of the Ocelot-Cloud ecosystem and are encouraged to integrate Ocelot-Cloud into their service offerings. They can benefit financially by hosting and selling access to the platform, thus helping to spread the software. The Community Edition is free to host anyway due to its open source licence. The proprietary Enterprise Edition is also free to host under the terms of the licence, with no additional fees or bureaucracy. Ocelot Cloud can also be hosted privately for friends, organisations, local clubs or schools without any restrictions.
+Yes, the goal is to make Ocelot-Cloud as easy and widely available as possible. While we encourage you to host your infrastructure on your own hardware, we do not want to create barriers for users who want to choose other options. Some users prefer to host their infrastructure on trusted cloud providers, making them an important part of the Ocelot-Cloud ecosystem. The Community Edition can be freely hosted anywhere due to its open source license. Similarly, the proprietary license of the Enterprise Edition does not require any additional fees or permissions to host. Cloud providers or even individuals are explicitly allowed to earn money by hosting Ocelot-Cloud.

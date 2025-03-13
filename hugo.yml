@@ -24,9 +24,6 @@ markup:
 
 menu:
   main:
-    - name: "Overview"
-      url: "/overview/"
-      weight: 10
     - name: "Docs"
       url: "/docs/"
       weight: 20

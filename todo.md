@@ -1,5 +1,5 @@
 ### open todos
 
-* add existing contents to here
-* remove blog?
-* make home page and footer pretty?
+* add existing contents to here, also maybe shift stuff from website here
+* add content to readme
+* SEO and RSS?

@@ -1,1 +1,7 @@
+/* Removes these warnings from the output:
+WARN  found no layout file for "json" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "json" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "json" for layout "tags" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "json" for layout "list" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+*/
 {{ jsonify ( . ) }}

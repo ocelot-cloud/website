@@ -1,10 +1,6 @@
 ---
 title: "Contribution Guide"
-date: 2025-03-12
-summary: "Learn how to support the Ocelot Ecosystem and contribute code."
 tags: ["contributing", "community"]
-ShowToc: true
-TocOpen: false
 ---
 
 ### Report bugs

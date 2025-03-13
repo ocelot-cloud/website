@@ -1,10 +1,6 @@
 ---
 title: "App Store Version Creation Guide"
-date: 2025-03-11
-summary: "Learn how to create and manage versions in the Store to extend the app ecosystem."
 tags: ["store", "app"]
-ShowToc: true
-TocOpen: false
 ---
 
 This article explains how to create new apps and versions in the [App Store](https://store.ocelot-cloud.org/).

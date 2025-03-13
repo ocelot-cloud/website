@@ -36,5 +36,5 @@ outputs:
   section: ["HTML", "RSS", "JSON"]
 
 taxonomies:
-  tag: "tags"
+  # tag: "tags"
   category: "categories"

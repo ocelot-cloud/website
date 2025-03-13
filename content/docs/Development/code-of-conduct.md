@@ -1,10 +1,6 @@
 ---
 title: "Code of Conduct"
-date: 2025-03-12
-summary: "Expectations for respectful communication and professional behavior"
-tags: ["conduct", "community"]
-ShowToc: true
-TocOpen: false
+tags: ["Conduct", "Community"]
 ---
 
 The purpose of this Code of Conduct is to ensure a welcoming and respectful environment for all participants in our software project. This code applies to all contributors, maintainers and users.

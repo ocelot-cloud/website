@@ -1,0 +1,33 @@
+baseURL: "https://docs.ocelot-cloud.org/"
+languageCode: "en-us"
+title: "Ocelot-Cloud"
+
+module:
+  proxy: "direct"
+  imports:
+    - path: "github.com/google/docsy"
+
+params:
+  github_repo: "https://github.com/ocelot-cloud/docs"
+  ui:
+    themeVariant: "dark"
+    showLightDarkModeMenu: true
+    sidebar_search_disable: true
+    sidebar_menu_compact: true
+    navbar_logo: false
+  offlineSearch: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # Allows raw HTML in Markdown
+  highlight:
+    noClasses: false
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]  # JSON needed for search
+  section: ["HTML", "RSS", "JSON"]
+
+taxonomies:
+  # tag: "tags"
+  category: "categories"

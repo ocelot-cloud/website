@@ -1,6 +1,7 @@
 ---
 title: "Ocelot Cloud"
-type: "docs"
+linkTitle: Documentation
+menu: { main: { weight: 20 } }
 ---
 
 ## Empowering Self-Hosted, Open Source IT Infrastructure

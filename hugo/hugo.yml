@@ -13,6 +13,7 @@ params:
     themeVariant: "dark"
     showLightDarkModeMenu: true
     sidebar_search_disable: true
+    sidebar_menu_compact: true
   offlineSearch: true
 
 markup:

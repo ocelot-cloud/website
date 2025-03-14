@@ -6,11 +6,13 @@ title: "Ocelot Ecosystem"
 
 Host your own open-source IT infrastructure and regain control over your data. Ocelot-Cloud offers an easy-to-use, self-hosted solution that avoids the risks of cloud providers, ensuring your data remains secure and under your control without the complexity of traditional self-hosting.
 
-Starting points:
+Servers:
 * <a href="https://demo.ocelot-cloud.org/" target="_blank" rel="noopener noreferrer">Demo Server</a>: Explore Ocelot-Cloud firsthand and experience its capabilities in action. 
+* <a href="https://store.ocelot-cloud.org" target="_blank" rel="noopener noreferrer">App Store</a>: Here you can add new apps to the Ocelot ecosystem.
+
+Documentation starting points:
 * [Overview]({{< relref "docs/overview/_index.md" >}}): To dive deeper into the topic. 
-* [Contact]({{< relref "docs/overview/contact.md" >}}): Here you will find other channels we operate on. 
-* <a href="https://store.ocelot-cloud.org" target="_blank" rel="noopener noreferrer">App Store</a>: Here you can add new apps to the Ocelot ecosystem. 
+  * [Contact]({{< relref "docs/overview/contact.md" >}}): Here you will find other channels we operate on.
 * [Development]({{< relref "docs/development/_index.md" >}}): If you are a software developer and want to learn the technical details of the software or contribute to the project, this is the place for you.
 * [Glossary]({{< relref "docs/glossary/_index.md" >}}): If you don't know a specific abbreviation, take a look at this article.
 

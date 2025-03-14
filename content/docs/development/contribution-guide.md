@@ -13,7 +13,11 @@ If you have an idea for improving the project, you can submit your suggestion as
 
 ### Create a pull request
 
-To contribute code, fork the repository, create a new branch, make your changes, and then submit a pull request (PR). Branches should have a name of the following form `<issueNumber>-<descriptiveTitle>`. Make sure your PR has a clear title, a brief description of the changes, and any relevant issue numbers. All code contributions should pass existing tests and include new tests for added features.
+To contribute code, fork the repository, create a new branch, make your changes, and then submit a PR. Branches should have a name of the following form `<issueNumber>-<descriptiveTitle>`. Make sure your PR has a clear title, a brief description of the changes, and any relevant issue numbers. All code contributions should pass existing tests and include new tests for added features.
+
+### Improve Documentation
+
+The content of this website/documentation server is publicly available on <a href="https://github.com/ocelot-cloud/docs" target="_blank" rel="noopener noreferrer">GitHub</a>. If you find a typo, missing information, or have suggestions for improvement, please submit a PR with your changes. The links at the top of the right navigation bar can help you. of The documentation is written in Markdown and deployed using <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>. More detailed development instructions can be found in the `README.md` file.
 
 ## Developer Guide
 

@@ -8,7 +8,7 @@ This section provides an overview of the features offered by the Ocelot-Cloud Pl
 
 ### Easy Installation
 
-Ocelot-Cloud can be installed on any device that supports a widely used technology called 'Docker,' making it largely independent of hardware and operating systems. All server maintenance tasks are handled automatically by Ocelot-Cloud in the background.
+Ocelot-Cloud can be installed on any device that supports a widely used technology called 'Docker,' making it largely independent of hardware and operating systems. Installation requires only a single Docker command on the command line. All server maintenance tasks are handled automatically by Ocelot-Cloud in the background.
 
 ### App Store
 

@@ -1,6 +1,6 @@
 baseURL: "https://docs.ocelot-cloud.org/"
 languageCode: "en-us"
-title: "Ocelot Website And Documentation"
+title: "Ocelot-Cloud"
 
 module:
   proxy: "direct"
@@ -14,6 +14,7 @@ params:
     showLightDarkModeMenu: true
     sidebar_search_disable: true
     sidebar_menu_compact: true
+    navbar_logo: false
   offlineSearch: true
 
 markup:

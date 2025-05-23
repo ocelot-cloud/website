@@ -23,6 +23,10 @@ Close the current shell and reopen it to apply the changes. Check the installati
 
 Clone the repository to your local machine and run `hugo server`. Go to `http://localhost:1313` in your browser to view the documentation.
 
+### Contributing
+
+Please read the [Community](https://ocelot-cloud.org/docs/community/) articles for more information on how to contribute to the project and interact with others.
+
 ### License
 
 This project is licensed under the 0BSD License - see the [LICENSE](LICENSE) file for details.

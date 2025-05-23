@@ -1,4 +1,12 @@
 @import 'td/code-dark';
+
+/*
+In hugo.yaml, setting showLightDarkModeMenu to false will disable the necessary JavaScript for the dark theme and keep the website in the light theme.  To force the dark theme, we set showLightDarkModeMenu to true, made the dark theme the default, and hid the menu that switches themes.
+*/
+.td-light-dark-menu {
+  display: none !important;
+}
+
 .highlight pre {
   background-color: var(--td-pre-bg) !important;
 }
@@ -8,4 +16,9 @@ footer {
     color: #fff;
   padding: 1rem;
   text-align: center;
+}
+
+details summary .faq-question {
+  cursor: pointer;
+  font-weight: bold;
 }

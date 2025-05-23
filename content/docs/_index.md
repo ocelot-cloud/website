@@ -4,23 +4,19 @@ no_list: true
 ---
 
 ## Freedom to Build, Power to Control
+
 <br> 
 <div style="display: flex; align-items: center; width: 80%;"> 
 <img src="logo.png" alt="My Image" width="150" style="margin-right: 10px;"> 
-<p>Use Ocelot-Cloud to host your IT infrastructure with minimal effort. Self-host to maintain full control of your data. Even non-technical users can set it up with a few clicks. Installing apps is as simple as adding them on a smartphone. Anyone can upload web-based software to the App Store, making it highly flexible. Ocelot-Cloud’s core features are free and cover most needs.</p> 
+<p>Use Ocelot-Cloud to host your IT infrastructure with minimal effort. Self-host to maintain full control of your data. Once installed and configured, even non-technical users can operate it. Installing apps in Ocelot-Cloud is as simple as adding apps on a smartphone. As part of our commitment to the public good, the core features of Ocelot-Cloud are and will remain open source.</p> 
 </div> 
 <br>
 
-Documentation:
-* [Overview]({{< relref "docs/overview/_index.md" >}}): Get a general idea of the topic.
-* [User Guides]({{< relref "docs/user-guides/_index.md" >}}): Articles about software usage and project participation.
-* [Glossary]({{< relref "docs/glossary/_index.md" >}}): If you don't know a specific abbreviation, take a look here.
+Watch our {{< external_link "https://www.youtube.com/watch?v=lMT80Y1F0So" "Beta Release Demonstration Video on Youtube" >}}. Further resources:
+* [Overview]({{< relref "overview.md" >}}): Learn what Ocelot-Cloud offers and how it works.
+* [Getting Started]({{< relref "ocelot-cloud/getting-started.md" >}}): Install Ocelot-Cloud and explore its features.
+* {{< external_link "https://store.ocelot-cloud.org" "App Store" >}}: Add new apps to the Ocelot ecosystem.
+* {{< external_link "https://github.com/orgs/ocelot-cloud/repositories" "GitHub" >}}: Contribute to the development of the project.
 
-Resources:
-* <a href="https://demo.ocelot-cloud.org/" target="_blank" rel="noopener noreferrer">Demo Server</a>: Explore Ocelot-Cloud firsthand and experience its capabilities in action.
-* <a href="https://store.ocelot-cloud.org" target="_blank" rel="noopener noreferrer">App Store</a>: Here you can add new apps to the Ocelot ecosystem.
-* <a href="https://github.com/orgs/ocelot-cloud/repositories" target="_blank" rel="noopener noreferrer">GitHub</a>: Contribute to the development of the project.
-
-{{< alert title="Note" color="warning" >}}
-Ocelot-Cloud is still under active development. The current documentation serves as a preview of the first release.
+{{< alert title="Note" color="warning" >}} Ocelot-Cloud is currently in beta. Please do not use it for production systems yet.
 {{< /alert >}}

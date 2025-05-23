@@ -1,4 +1,4 @@
-baseURL: "https://docs.ocelot-cloud.org/"
+baseURL: "https://ocelot-cloud.org/"
 languageCode: "en-us"
 title: "Ocelot-Cloud"
 
@@ -31,3 +31,16 @@ outputs:
 taxonomies:
   # tag: "tags"
   category: "categories"
+
+menu:
+  main:
+    - name: "Docs"
+      url: "/docs/"
+      weight: 10
+    # Uncomment and make these sections available these when there is relevant content be to published.
+    #- name: "Wiki"
+    #  url: "/wiki/"
+    #  weight: 20
+    - name: "News"
+      url: "/blog/"
+      weight: 30

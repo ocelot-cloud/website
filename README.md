@@ -6,10 +6,13 @@ Minor changes, such as fixing typos, can be made using the GitHub web interface.
 
 ### Requirements
 
-Install `hugo` and `npm`. On Debian/Ubuntu, you can do this with the following commands:
+Clone the repository and install `hugo`, `npm` and `postcss`. On Debian/Ubuntu, you can do this with the following commands:
 
 ```bash
+cd website
+
 sudo apt install -y npm
+npm install
 
 latest_version=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep -oP '"tag_name": "\K[^"]+')
 wget "https://github.com/gohugoio/hugo/releases/latest/download/hugo_extended_${latest_version#v}_Linux-64bit.tar.gz"
@@ -21,7 +24,7 @@ Close the current shell and reopen it to apply the changes. Check the installati
 
 ### Setup
 
-Clone the repository to your local machine and run `hugo server`. Go to `http://localhost:1313` in your browser to view the documentation.
+Run `hugo server` and go to `http://localhost:1313` in your browser to view the documentation.
 
 ### Contributing
 

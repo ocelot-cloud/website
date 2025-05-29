@@ -45,6 +45,6 @@ menu:
       url: "/blog/"
       weight: 30
     - name: "GitHub"
-      url: "https://github.com/ocelot-cloud"
+      url: "https://github.com/orgs/ocelot-cloud/repositories"
       weight: 50
       pre: "<i class='fa-brands fa-github'></i>"

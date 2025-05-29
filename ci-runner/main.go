@@ -45,14 +45,15 @@ var deployCmd = &cobra.Command{
 	Short: "Deploy current version to server",
 	Run: func(cmd *cobra.Command, args []string) {
 		var remoteHomeDir = "/home/user"
+
+		tr.Execute("hugo")
 		executeOnServer("systemctl stop website")
 		executeOnServer("mkdir -p %s/website", remoteHomeDir)
-		rsyncCmd := fmt.Sprintf("rsync -avz --delete ./ %s:%s/website/", sshConfigHostName, remoteHomeDir)
+		rsyncCmd := fmt.Sprintf("rsync -avz --delete ./public/ %s:%s/website/", sshConfigHostName, remoteHomeDir)
 		tr.ExecuteInDir(projectDir, rsyncCmd)
 		executeOnServer("chown -R user:user %s/website", remoteHomeDir)
-		executeOnServer("chmod -R 700 %s/website", remoteHomeDir)
-		executeOnServer("systemctl start website")
-		executeOnServer("nmap -p 1313 localhost")
+		executeOnServer("find /home/user/website -type d -exec chmod 755 {} +")
+		executeOnServer("find /home/user/website -type f -exec chmod 644 {} +")
 	},
 }
 

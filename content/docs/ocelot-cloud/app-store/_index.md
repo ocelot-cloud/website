@@ -7,6 +7,12 @@ This article explains the **App Store** page in the Ocelot-Cloud GUI. The actual
 
 The App Store lets you search and install apps on your Ocelot-Cloud instance with just a few clicks. By default, the latest version is suggested for installation, but you have the option to install an older version.
 
+### Official Apps
+
+Installation considerations:
+
+{{< children >}}
+
 ### Unofficial Apps
 
 By default, only official apps provided by us are shown when searching for apps. This means that your search results will only contain apps of use to the official maintainer with the name "ocelotcloud". By enabling "Show Unofficial Apps", you have the option to search for unofficial apps from third-party maintainers. The search term will then match maintainers or app names.

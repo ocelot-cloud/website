@@ -22,4 +22,4 @@ We are working on adding more official apps to the App Store.
 
 ### Unofficial Apps
 
-Any third party can upload apps to the App Store, which any user can then download. To visit them, install Ocelot-Cloud and explore the App Store.
+Any third party can upload apps to the App Store, which any user can then download. To visit them, install Ocelot-Cloud and explore the App Store page there.

@@ -14,9 +14,9 @@ no_list: true
 
 Watch our {{< external_link "https://www.youtube.com/watch?v=lMT80Y1F0So" "Beta Release Demonstration Video on Youtube" >}}. Further resources:
 * [Overview]({{< relref "overview.md" >}}): Learn what Ocelot-Cloud offers and how it works.
+  * [Apps]({{< relref "overview/apps.md" >}}): Take a look at the apps that Ocelot-Cloud provides.
 * [Getting Started]({{< relref "ocelot-cloud/getting-started.md" >}}): Install Ocelot-Cloud and explore its features.
 * {{< external_link "https://store.ocelot-cloud.org" "App Store" >}}: Add new apps to the Ocelot ecosystem.
-* {{< external_link "https://github.com/orgs/ocelot-cloud/repositories" "GitHub" >}}: Contribute to the development of the project.
 
 {{< alert title="Note" color="warning" >}} Ocelot-Cloud is currently in beta. Please do not use it for production systems yet.
 {{< /alert >}}

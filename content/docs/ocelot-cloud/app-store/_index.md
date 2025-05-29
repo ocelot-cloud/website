@@ -1,6 +1,7 @@
 ---
 title: "App Store"
 weight: 20
+no_list: true
 ---
 
 This article explains the **App Store** page in the Ocelot-Cloud GUI. The actual {{< external_link "https://store.ocelot-cloud.org/" "App Store" >}} is a separate online service where anyone can upload their own apps.

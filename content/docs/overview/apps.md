@@ -15,7 +15,9 @@ These are the apps of the official maintainer **ocelotcloud** available in the A
 
 | App | Description |
 |-----|-------------|
+| {{< external_link "https://about.gitea.com" "Gitea" >}} | Lightweight, self-hosted Git service for code hosting and collaboration. |
 | {{< external_link "https://mattermost.com" "Mattermost" >}} | Team messaging platform for secure, self-hosted collaboration. |
+| {{< external_link "https://owncloud.com/infinite-scale" "OCIS" >}} | Modern file sync and sharing platform for secure, scalable cloud storage with integrated full-text search. |
 | {{< external_link "https://www.xwiki.org" "XWiki" >}} | Advanced wiki platform for collaborative content management. |
 
 We are working on adding more official apps to the App Store.

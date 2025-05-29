@@ -18,6 +18,7 @@ weight: 40
 | LAN          | Local Area Network                 |
 | LLM          | Large Language Model               |
 | MITM         | Man-in-the-middle                  |
+| OCIS         | OwnCloud Infinite Scale            |
 | OIDC         | OpenID Connect                     |
 | PE           | Premium Edition                    |
 | PR           | Pull Request                       |

@@ -55,4 +55,4 @@ The following areas remain under the operator’s control and are out of scope f
 ### Miscellaneous
 
 * The owner of the Ocelot-Cloud installation is responsible for legal and regulatory compliance, such as privacy laws.
-* Ocelot-Cloud provides a self-signed wildcard certificate by default. While this certificate may be sufficient for private LAN networks, it is vulnerable to man-in-the-middle (MITM) attacks. For secure deployments, operators must upload or generate a trusted wildcard certificate.
+* Ocelot-Cloud comes with a default self-signed wildcard certificate. Although this might be suitable for trusted LAN environments, it is vulnerable to man-in-the-middle (MITM) attacks. To ensure security, operators must upload or generate a trusted wildcard certificate and keep it up to date.

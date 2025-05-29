@@ -146,7 +146,7 @@ You have complete freedom in designing your app. The following recommendations a
 
 ### Reserved Exposed Ports
 
-Official apps expose specific ports to the public via the docker-compose.yml file. For example:
+Some official apps expose specific ports to the public via the docker-compose.yml file. For example:
 
 ```yaml
 ports:

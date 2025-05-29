@@ -6,7 +6,7 @@ weight: 38
 To learn more about the project, visit:
 
 * {{< external_link "https://www.youtube.com/@Ocelot-Cloud" "YouTube" >}} for our technical demos.
-* Stay up to date by adding our RSS feed to your favorite reader app (e.g., {{< external_link "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play" "Feeder" >}}) using the link below. This way, you can stay informed while protecting your privacy. You don't need to create an account or subscribe to newsletters via email address to receive the news.
+* **RSS Feed**: Stay up to date by adding our RSS feed to your favorite reader app (e.g., {{< external_link "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play" "Feeder" >}}) using the link below. This way, you can stay informed while protecting your privacy. You don't need to create an account or subscribe to newsletters via email address to receive the news.
 
 ```text
 https://ocelot-cloud.org/blog/index.xml

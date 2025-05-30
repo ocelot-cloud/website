@@ -8,9 +8,7 @@ When you first visit Mattermost after installation, follow the setup wizard to c
 
 By default, users can invite others to the Mattermost server. To restrict this so only admins can invite:
 
-- Tile menu (top left) → System Console → User Management → Permissions → Edit Scheme → disable **Add Team Members** → Save
-
-This ensures only admins can invite users.
+- Tile menu (top left) → System Console → User Management → Permissions → Edit Scheme → disable 'Add Team Members' → Save
 
 ### User Creation
 

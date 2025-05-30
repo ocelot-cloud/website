@@ -9,7 +9,7 @@ When you first access the XWiki web UI, follow the installation wizard to create
 To prevent users from self-registering:
 
 * Drawer menu (top left) → Administration → Users & Rights → Rights → Users
-  * In the **XWikiAdminGroup** row, click the **Register** column until a green checkmark appears (explicit allow)
+  * In the 'XWikiAdminGroup' row, click the 'Register' column until a green checkmark appears (explicit allow)
 
 ### Make Wiki Private
 

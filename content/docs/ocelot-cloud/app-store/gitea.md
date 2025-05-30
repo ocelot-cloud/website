@@ -2,9 +2,7 @@
 title: "Gitea"
 ---
 
-A general rule in Gitea is that many settings cannot be changed via the web GUI once the installation wizard is completed. However, you can still modify them by directly editing the `app.ini` file inside the container as described below.
-
-Since this requires technical knowledge, we recommend ensuring that you set the correct HOST value in the Ocelot-Cloud Settings and clearly decide whether to allow self-registration before deploying a production instance.
+A general rule in Gitea is that many settings cannot be changed via the web GUI once the installation wizard is completed. However, you can still modify them by directly editing the `app.ini` file inside the container as described below. As this is a somewhat hacky solution that requires technical knowledge, we recommend deciding whether or not to allow self-registration before deploying a production instance.
 
 ### Installation Wizard
 
@@ -30,14 +28,6 @@ apk add nano
 nano /data/gitea/conf/app.ini
 ```
 
-Adapt the HOST-related parameters.
+Adapt the parameters as needed. For example, adjust the self-registration policy by setting `DISABLE_REGISTRATION` to `true` or `false`.
 
-```text
-DOMAIN = gitea.my-domain.com
-SSH_DOMAIN = gitea.my-domain.com
-ROOT_URL = https://gitea.my-domain.com/
-```
-
-Adapt the self-registration policy by setting `DISABLE_REGISTRATION` to `true` or `false`.
-
-Save the app.ini file and restart the app.
+Save the `app.ini` file and restart the app.

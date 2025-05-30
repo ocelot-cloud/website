@@ -2,12 +2,26 @@
 title: "XWiki"
 ---
 
-The installation process is straightforward with no additional considerations.
+When you first access the XWiki web UI, follow the installation wizard to create the admin account.
 
-TODO: Disable: in Administration → Users & Rights → Users, remove the Register right from Unregistered Users (or grant it only to XWikiAdminGroup)
+### Disable Self-Registration
 
-TODO explain how to enable self-registration for an open community:
-* Gitea — Site Administration → Configuration → Service → Disable self-registration toggle.
-* Mattermost — System Console → Authentication → Signup → Enable account creation / Enable open server switches.
-* XWiki — Administration → Users & Rights → remove the Register right from Unregistered Users.
-* OCIS — No public signup feature; only the built-in admin can add users via the Users page or CLI.
+To prevent users from self-registering:
+
+* Drawer menu (top left) → Administration → Users & Rights → Rights → Users
+  * In the **XWikiAdminGroup** row, click the **Register** column until a green checkmark appears (explicit allow)
+
+### Make Wiki Private
+
+To restrict access to authenticated users only:
+
+- Drawer menu (top left) → Administration → Users & Rights → Rights → Users
+- Enable:
+  - Prevent unregistered users from viewing pages, regardless of the page rights
+  - Prevent unregistered users from editing pages, regardless of the page rights
+
+### Create Users
+
+With self-registration disabled, administrators can create users manually:
+
+- Drawer menu (top left) → Administration → Users & Rights → Users → Add User

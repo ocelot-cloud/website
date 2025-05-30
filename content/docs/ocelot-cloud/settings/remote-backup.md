@@ -17,7 +17,7 @@ Always keep a copy of your settings, especially the Restic encryption password. 
 
 ## Usage Guide
 
-1. On the Ocelot-Cloud Settings > Remote Backup page, fill in all required fields except **SSH Known Hosts**. The **Remote Host** can be either a domain or an IP address.
+1. On the Ocelot-Cloud Settings → Remote Backup page, fill in all required fields except **SSH Known Hosts**. The **Remote Host** can be either a domain or an IP address.
 1. Click the **GET KNOWN HOSTS** button. This uses the **Remote Host** and **SSH Port** to fetch the backup server’s public SSH keys. The **SSH Known Hosts** field will then be populated with the public SSH keys of the backup server.
 1. Verify that the received keys match those of the actual server. You can do this by running `ssh-keyscan -p <port> -H <host>` from a separate trusted machine and comparing the output. For all future connections, only servers matching the keys in **SSH Known Hosts** will be trusted. This protects against man-in-the-middle (MITM) attacks.
 1. Click the **TEST CONNECTION** button. If it fails, review your settings. If successful, it confirms that Ocelot-Cloud can connect to the remote server for backups.

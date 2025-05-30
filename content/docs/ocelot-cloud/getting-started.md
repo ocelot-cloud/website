@@ -27,9 +27,9 @@ This setup is intended for testing and exploring Ocelot-Cloud on your local PC.
 
 * Visit [http://localhost](http://localhost) in your browser.
 * Log in
-* Settings Page > set **Host** to **localhost** and save
-* App Store Page > download an app
-* Installed Apps Page > start and open app
+* Settings Page → set **Host** to **localhost** and save
+* App Store Page → download an app
+* Installed Apps Page → start and open app
 
 Feel free to explore the other features from here.
 
@@ -40,7 +40,7 @@ This is for a setup in a private, trusted LAN network to perform minimal work to
 * Visit **https://[device-lan-ip-address]**. 
   * There is a self-signed certificate, so your browser will throw a warning that this certificate is not safe. Assuming there is no malicious hacker in your network, you can simply ignore this. Click on **Advanced**. Depending on the browser, you may see options like **Proceed to [device-lan-ip-address] (unsafe)** or **Accept the Risk and Continue**, which must be clicked.
 * Log in
-* Settings Page > set **Host** to e.g. **my-domain.local** and save
+* Settings Page → set **Host** to e.g. **my-domain.local** and save
   * Since we are not working with real certificates you can choose any domain you want.
 
 Now we need a mechanism that allows your computer to resolve the domain name to the IP address of the Ocelot-Cloud server. The easiest way to start is to simply add the following entry to your hosts file: Every system has such a file. For example, on Linux, it is located at **/etc/hosts** and you could add entries like this:
@@ -66,7 +66,7 @@ This setup is intended for production use and assumes that you own a domain and 
 * Visit [https://production-domain.com](https://production-domain.com)
   * As explained above, ignore the certificate warning and continue.
 * Log in
-* Settings Page > set **Host** to **production-domain.com** and save
+* Settings Page → set **Host** to **production-domain.com** and save
 * Now you can either 
   * upload your own wildcard certificate covering the domains above
   * or generate a wildcard certificate

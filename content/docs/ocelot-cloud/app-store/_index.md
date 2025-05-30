@@ -10,9 +10,11 @@ The App Store lets you search and install apps on your Ocelot-Cloud instance wit
 
 ### Official Apps
 
-Installation considerations:
+When installing an official app, you should always read the according articles below as they contain setup instructions , security guidelines , information about self-registration
 
 {{< children >}}
+
+By default, the self-registration feature is disabled for all official apps for security reasons. However, if you intend to found an open community which allows self-registration, the articles provides instructions on how to enable it.
 
 ### Unofficial Apps
 

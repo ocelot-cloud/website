@@ -16,6 +16,6 @@ For production setups, after installation, it is crucial to log in as admin and 
 - Admin panel → **Users** → enter email (e.g., `some@email.com`) → **Invite**
 - User visits Vaultwarden home page → **Create Account** → uses the same email and sets a password → **Create Account**
 
-### Self-registration
+### Self-registration (Optional)
 
 To enable or disable self-registration: Admin panel → **General Settings** → toggle **Allow new signups**

@@ -5,21 +5,21 @@ weight: 10
 
 The goal is to have a Community Edition whose free features meet the needs of casual users. The commercial features of the Premium Edition are for users who require more advanced functionality. Below are lists of key features that have been implemented or will be implemented in the near future. A check mark means that this feature will be available in the edition.
 
-| Feature      |    Community    |     Premium     |
-|--------------|:---------------:| :-------------: |
-| App Store    | {{<checkmark>}} | {{<checkmark>}} |
-| Networking   | {{<checkmark>}} | {{<checkmark>}} |
-| Updates      | {{<checkmark>}} | {{<checkmark>}} |
-| Backups      | {{<checkmark>}} | {{<checkmark>}} |
-| Certificates | {{<checkmark>}} | {{<checkmark>}} |
-| Users        | {{<checkmark>}} | {{<checkmark>}} |
-| Public Instance | {{<checkmark>}} | {{<checkmark>}} |
-| OIDC Server     | {{<checkmark>}} | {{<checkmark>}} |
-| Groups          |   {{<cross>}}   | {{<checkmark>}} |
-| Auto Setup      |   {{<cross>}}   | {{<checkmark>}} |
-| Monitoring      |   {{<cross>}}   | {{<checkmark>}} |
-| Log Collection  |   {{<cross>}}   | {{<checkmark>}} |
-| Notifications   |   {{<cross>}}   | {{<checkmark>}} |
+| Feature            |    Community    |     Premium     |
+|--------------------|:---------------:| :-------------: |
+| App Store          | {{<checkmark>}} | {{<checkmark>}} |
+| Networking         | {{<checkmark>}} | {{<checkmark>}} |
+| Updates            | {{<checkmark>}} | {{<checkmark>}} |
+| Backups            | {{<checkmark>}} | {{<checkmark>}} |
+| Certificates       | {{<checkmark>}} | {{<checkmark>}} |
+| Users              | {{<checkmark>}} | {{<checkmark>}} |
+| Public Instance    | {{<checkmark>}} | {{<checkmark>}} |
+| OIDC Server        | {{<checkmark>}} | {{<checkmark>}} |
+| Groups             |   {{<cross>}}   | {{<checkmark>}} |
+| Auto Setup         |   {{<cross>}}   | {{<checkmark>}} |
+| Monitoring         |   {{<cross>}}   | {{<checkmark>}} |
+| Log Centralization |   {{<cross>}}   | {{<checkmark>}} |
+| Notifications      |   {{<cross>}}   | {{<checkmark>}} |
 
 ### Apps Store
 
@@ -65,9 +65,9 @@ To make the deployment of Ocelot-Cloud even easier, we offer premium users the o
 
 Ocelot-Cloud includes infrastructure monitoring for metrics such as CPU, memory, disk usage and network traffic. In addition, Ocelot-Cloud provides a GUI that allows visualization and analysis of these metrics.
 
-### Log Collection
+### Log Centralization
 
-Logs are critical but often buried in containers. Ocelot-Cloud aggregates these logs centrally and provides tools to view and analyze them.
+Logs are typically scattered across numerous files throughout the infrastructure, making them difficult to analyse. Ocelot-Cloud aggregates these logs centrally and provides graphical interfaces for viewing and analysing them.
 
 ### Notifications
 

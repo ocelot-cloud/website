@@ -137,9 +137,6 @@ The `app.yml`:
 
 You have complete freedom in designing your app. The following recommendations are not mandatory, but can help improve the user experience and integration to Ocelot-Cloud. If you are developing an app or can influence its behavior, we recommend the following:
 
-* All relevant configuration of the app should be done via the web interface. In particular, you should prompt the first user who visits the web interface to create an admin account on first startup, so you don't have to do it from the uploaded configuration files or the CLI.
-* Rely on a centralized, trusted administrator for control. Disable self-registration by default.
-
 * All relevant configuration should be done via the app’s web interface.
 * On first startup, prompt the first user to create an admin account to manage the instance.
 * Self-registration should be disabled by default, with user creation handled either manually or via integration with a central authentication system (e.g. OIDC). Self-registration can then be offered as an optional feature.

@@ -12,8 +12,7 @@ By default, users can invite others to the Mattermost server. To restrict this s
 
 ### User Creation
 
-Users are added by sending them an invitation link, which they use to create their own account. To generate an invitation link:
+Users are added by sending them an invitation link, which they use to create their own account. You can generate an invitation link using one of the following methods:
 
-- Organization name (below the tile menu, top left) → Invite People → Invite Link → Copy Link  
-  or
+- Organization name (below the tile menu, top left) → Invite People → Invite Link → Copy Link
 - Left sidebar → Direct Messages → Invite People → Invite Link → Copy Link

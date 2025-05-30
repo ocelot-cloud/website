@@ -2,5 +2,15 @@
 title: "OCIS"
 ---
 
-TODO: Also called "OwnCloud Infinite Scale"
-TODO: * OCIS — No public signup feature; only the built-in admin can add users via the Users page or CLI.
+Log in as admin with username `admin` and password `ocelot`.  
+Immediately change to a secure password:
+* My Account → Preferences → Change Password
+
+### Self-Registration
+
+OCIS does not support self-registration. Only admins can create users.
+
+### Create Users
+
+As admin:
+- Tile menu (top left) → Admin Settings → Users → + New User

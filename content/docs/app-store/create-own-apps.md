@@ -73,6 +73,9 @@ services:
       - USER_UID=1000
       - USER_GID=1000
       - DISABLE_REGISTRATION=true
+      - GITEA__server__DOMAIN=gitea.${HOST}
+      - GITEA__server__ROOT_URL=https://gitea.${HOST}/
+      - GITEA__server__SSH_DOMAIN=gitea.${HOST}
     ports:
       - 2222:22
     volumes:
@@ -86,6 +89,12 @@ services:
           cpus: 0.2
           memory: 256M
 ```
+
+##### ${HOST}
+
+Some apps require the domain they are accessible at for security or compatibility reasons. As this value varies, you can use `${HOST}` as a placeholder. When an app is downloaded and started, this placeholder is automatically replaced by the HOST value defined on the Settings page of the Ocelot-Cloud.
+
+If you need a full URL with protocol, use HTTPS and not HTTP, since Ocelot-Cloud assumes that production environments use TLS.
 
 ### Configuration for Ocelot-Cloud
 

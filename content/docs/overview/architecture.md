@@ -7,4 +7,4 @@ Ocelot-Cloud is a monolithic application that runs on a single server. Each HTTP
 
 <img src="/images/ocelot-architecture.drawio.svg" style="width:60%;" alt="Architecture Diagram">
 
-For security reasons, each app runs in its own isolated space with its unique Docker network and volumes. So apps are unaware of each other.
+For security reasons, each app runs in its own isolated space with its unique Docker network and volumes. So, apps are isolated from each other.

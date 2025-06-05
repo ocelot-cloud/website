@@ -9,7 +9,8 @@ import (
 )
 
 var (
-	projectDir = getParentDir()
+	projectDir        = getParentDir()
+	sshConfigHostName = "website"
 )
 
 func getParentDir() string {
@@ -37,8 +38,6 @@ func main() {
 		tr.CleanupAndExitWithError()
 	}
 }
-
-const sshConfigHostName = "website"
 
 var deployCmd = &cobra.Command{
 	Use:   "deploy",

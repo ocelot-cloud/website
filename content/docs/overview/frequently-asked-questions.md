@@ -24,7 +24,7 @@ Practically, yes. Security is a top priority for Ocelot-Cloud, and we've built i
 {{< /details >}}
 
 {{< details "Will Ocelot-Cloud spy on my data?" >}}
-No, we don't spy on users. Ocelot-Cloud can even run on your own hardware, ensuring that your data remains physically under your control and inaccessible to anyone else. We are committed to upholding the highest ethical standards, so introducing malicious code would not only violate our principles, but also undermine the trust and reputation we have built within the community.
+No. The Community Edition of Ocelot-Cloud is fully open-source. Every line of code is publicly available, so it can easily be audited to detect any malicious changes. You can also run it on your own hardware, giving you full control over your data. While any closed-source software, including our Premium Edition, could theoretically hide harder to detect spyware, doing so would contradict our core values and destroy the trust we've built with our community.
 {{< /details >}}
 
 {{< details "How does Ocelot-Cloud compare to Nextcloud?" >}}

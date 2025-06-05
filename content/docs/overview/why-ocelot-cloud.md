@@ -40,7 +40,7 @@ There are proprietary solutions, i.e. solutions whose source code is not open. T
 Therefore, we have developed software that aims to solve all of the above problems by offering the following features:
 
 * **Open-source Community Edition** — all essential features at no cost, as well as the freedoms to adapt and share.
-* **Convince** — installing apps in Ocelot-Cloud is as easy as installing apps on a smartphone
+* **Convenience** — installing apps in Ocelot-Cloud is as easy as installing apps on a smartphone
 * **Automated upkeep** — updates and backups handled for you.
 * **Self-hosting freedom** — deploy on hardware you control.
 * **Open App Store** — anyone can contribute and install community apps for a diverse ecosystem.

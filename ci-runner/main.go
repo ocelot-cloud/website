@@ -38,32 +38,22 @@ func main() {
 	}
 }
 
-const sshConfigHostName = "ocelot"
+const sshConfigHostName = "website"
 
 var deployCmd = &cobra.Command{
 	Use:   "deploy",
 	Short: "Deploy current version to server",
 	Run: func(cmd *cobra.Command, args []string) {
-		var remoteHomeDir = "/home/user"
-
+		executeOnServer("docker rm -f website || true")
 		tr.Execute("hugo")
-		executeOnServer("systemctl stop website")
-		executeOnServer("mkdir -p %s/website", remoteHomeDir)
-		rsyncCmd := fmt.Sprintf("rsync -avz --delete ./public/ %s:%s/website/", sshConfigHostName, remoteHomeDir)
+		rsyncCmd := fmt.Sprintf("rsync -avz --delete docker-compose.yml ./public %s:", sshConfigHostName)
 		tr.ExecuteInDir(projectDir, rsyncCmd)
-		executeOnServer("chown -R user:user %s/website", remoteHomeDir)
-		executeOnServer("find /home/user/website -type d -exec chmod 755 {} +")
-		executeOnServer("find /home/user/website -type f -exec chmod 644 {} +")
+		executeOnServer("docker compose up -d")
+		executeOnServer("curl https://ocelot-cloud.org >> /dev/null")
 	},
 }
 
-func executeOnServer(command string, args ...string) {
-	var cmd string
-	if len(args) == 0 {
-		cmd = command
-	} else {
-		cmd = fmt.Sprintf(command, args[0])
-	}
-	println("executing: " + cmd)
-	tr.ExecuteInDir(".", "ssh ocelot \""+cmd+"\"")
+func executeOnServer(command string) {
+	sshCommand := fmt.Sprintf("ssh %s %s", sshConfigHostName, command)
+	tr.Execute(sshCommand)
 }

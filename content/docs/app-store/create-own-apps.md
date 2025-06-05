@@ -149,6 +149,7 @@ You have complete freedom in designing your app. The following recommendations a
 * All relevant configuration should be done via the app’s web interface.
 * On first startup, prompt the first user to create an admin account to manage the instance.
 * Self-registration should be disabled by default, with user creation handled either manually or via integration with a central authentication system (e.g. OIDC). Self-registration can then be offered as an optional feature.
+* Implement OIDC authentication to enable Ocelot-Cloud’s single sign-on (SSO). Ideally, configure OIDC via the Docker Compose environment variables, using the `${HOST}` placeholder.
 
 ### Reserved Exposed Ports
 

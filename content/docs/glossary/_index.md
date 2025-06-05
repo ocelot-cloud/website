@@ -22,3 +22,4 @@ weight: 40
 | OIDC         | OpenID Connect                     |
 | PE           | Premium Edition                    |
 | PR           | Pull Request                       |
+| SSO          | Single Sign-On                     |

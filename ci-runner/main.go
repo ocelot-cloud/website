@@ -45,7 +45,7 @@ var deployCmd = &cobra.Command{
 	Short: "Deploy current version to server",
 	Run: func(cmd *cobra.Command, args []string) {
 		executeOnServer("docker rm -f website || true")
-		tr.Execute("hugo")
+		tr.ExecuteInDir(projectDir, "hugo")
 		rsyncCmd := fmt.Sprintf("rsync -avz --delete docker-compose.yml ./public %s:", sshConfigHostName)
 		tr.ExecuteInDir(projectDir, rsyncCmd)
 		executeOnServer("docker compose up -d")

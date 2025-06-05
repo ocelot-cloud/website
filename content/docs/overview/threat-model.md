@@ -18,6 +18,7 @@ Every app runs in its own Docker container with no shared volumes, networks, or 
 * Strict input validation blocks SQL injection, XSS, RCE, and similar attacks.
 * Protection against CSRF attacks is built into the security framework.
 * App releases are zip files. When an app is uploaded to the App Store or downloaded by Ocelot-Cloud, it is checked for zip bombs and its consistency is validated to ensure that apps are always executed inside a sandbox.
+* Cookies are hashed, and passwords are salted and hashed. This means that even if a hacker gains access to the database, they won't be able to read them in plain text. Therefore, cookies and strong passwords are effectively impossible to crack.
 
 #### Secure Supply Chain
 * Static code analysis tools run frequently.

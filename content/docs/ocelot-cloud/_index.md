@@ -1,5 +1,5 @@
 ---
-title: "Ocelot Cloud"
+title: "Ocelot-Cloud"
 weight: 20
 ---
 

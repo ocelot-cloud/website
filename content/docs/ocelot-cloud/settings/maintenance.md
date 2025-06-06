@@ -5,9 +5,7 @@ weight: 30
 
 The features **Automatic Updates** and **Automatic Backups** are enabled by default and are handled by the Maintenance Agent in the background. The Maintenance Agent runs once a day.
 
-If both options are enabled, the Maintenance Agent compares the version of each locally installed app with the latest version in the App Store:
-* If no update is available, a backup is created.
-* If an update is available, a backup is created, then the update is applied. If the update fails, you can restore the previous version.
+If both options are enabled, the Maintenance Agent compares the version of each locally installed app with the latest version in the App Store. If an update is available, a backup is created, then the update is applied. If the update fails, you can restore the previous version.
 
 In **Preferred time for maintenance (UTC)** you can set the hour at which the update should be performed. It is recommended to select a time in which the Ocelot-Cloud is unlikely to be used, like 4:00 in your respective time zone. The time for this option is set in UTC (London time).
 

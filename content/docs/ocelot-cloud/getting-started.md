@@ -6,7 +6,7 @@ weight: 5
 To run Ocelot-Cloud, you need to have Docker installed on your system. For installation instructions, see the {{< external_link "https://docs.docker.com/get-docker/" "Docker Installation Guide" >}}. Installation of Ocelot-Cloud is done with the single command below. You may want to change the **INITIAL_ADMIN_NAME**, and if this is a production deployment, you should also use a more secure **INITIAL_ADMIN_PASSWORD**.
 
 ```bash
-docker run \
+sudo docker run \
   -d \
   --name ocelotcloud \
   -p 80:8080 \
@@ -76,7 +76,7 @@ This setup is intended for production use and assumes that you own a domain and 
 When testing Ocelot-Cloud, you should also enable remote backups and consider applying automatic updates. By default, Ocelot-Cloud automatically updates its apps, but not itself. Therefore, we recommend enabling daily automatic updates of Ocelot-Cloud by running Watchtower alongside it.
 
 ```bash
-docker run -d \
+sudo docker run -d \
   --name watchtower \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --restart unless-stopped \

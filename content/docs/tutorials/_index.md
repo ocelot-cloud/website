@@ -1,7 +1,4 @@
 ---
-title: "Tutorials"
+title: "Miscellaneous"
 weight: 38
-draft: true
 ---
-
-todo

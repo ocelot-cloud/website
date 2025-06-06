@@ -12,6 +12,7 @@ weight: 40
 | CI           | Continuous Integration             |
 | CLI          | Command-Line Interface             |
 | EULA         | End User License Agreement         |
+| FDE          | Full-Disk Encryption               |
 | GUI          | Graphical User Interface           |
 | HTTP         | Hypertext Transfer Protocol        |
 | HTTPS        | Hypertext Transfer Protocol Secure |
@@ -20,6 +21,8 @@ weight: 40
 | MITM         | Man-in-the-middle                  |
 | OCIS         | OwnCloud Infinite Scale            |
 | OIDC         | OpenID Connect                     |
+| OS           | Operating System                   |
 | PE           | Premium Edition                    |
 | PR           | Pull Request                       |
 | SSO          | Single Sign-On                     |
+| WSL          | Windows Subsystem for Linux        |

@@ -27,7 +27,7 @@ After the installation, log in via SSH and run the following commands to harden 
 
 ```bash
 sudo apt update
-sudo apt install -y ufw fail2ban unattended-upgrades
+sudo apt install -y ufw fail2ban unattended-upgrades nano
 sudo systemctl enable --now fail2ban unattended-upgrades
 
 # Firewall: only allow SSH + HTTPS (+ HTTP if needed)
@@ -46,10 +46,64 @@ Please note that Docker may override these firewall rules. For example, when you
 ##### SSH Hardening
 
 Add your public key to the file `~/.ssh/authorized_keys`, then try logging in via SSH. If it works, disable password authentication.
+
 ```bash
 sudo sed -Ei 's/^#?PasswordAuthentication .*/PasswordAuthentication no/' /etc/ssh/sshd_config
 sudo systemctl reload sshd
 ```
+
+### Update Automation
+
+To automate system updates, create a script and schedule it with cron.
+
+##### Create the update script
+
+```bash
+nano /usr/local/sbin/update.sh
+```
+
+Insert the following content:
+
+```bash
+#!/bin/bash
+
+set -e
+
+export DEBIAN_FRONTEND=noninteractive
+echo "Starting update job at $(TZ=Europe/Berlin date +%Y-%m-%d_%H:%M:%S)"
+echo "Pruning idle docker images"
+docker image prune -af
+echo "Updating"
+apt-get update
+echo "Upgrading"
+apt-get upgrade -y
+echo "Removing no longer required packages"
+apt-get autoremove --purge
+echo "Rebooting"
+shutdown -r now
+echo ""
+```
+
+Make the script executable:
+
+```bash
+chmod 700 /usr/local/sbin/update.sh
+```
+
+##### Schedule the script with cron
+
+Edit the root user's crontab:
+
+```
+crontab -e 
+```
+
+Add the following line to run the script daily at 4:00 AM and log output:
+
+```
+0 4 * * * /bin/bash /usr/local/sbin/update.sh >> /var/log/updates.log 2>&1
+```
+
 
 ### Full Disk Encryption
 
@@ -80,26 +134,8 @@ printf %s "$p" | ssh -i ~/.ssh/id_ed25519 root@SERVER-IP cryptroot-unlock
 
 ### Server Reboots
 
-To ensure that the latest kernel and security updates are applied, you should reboot the server periodically, for example once a month. However, if you have FDE, you need to unlock the disk during boot, which requires you to unlock the encryption manually. You should be aware of this additional effort when choosing FDE.
-
-Reboots can be automated using a cron job.
+To ensure that the latest kernel and security updates are applied, you should reboot the server periodically, for example once a month. Reboots can be automated using a cron job. However, if you have FDE, you need to unlock the disk during boot, which requires you to unlock the encryption manually. You should be aware of this additional effort when choosing FDE.
 
 ### Install Docker
 
-This prepares the installation of Ocelot-Cloud. You can use either the Snap package:
-
-```bash
-sudo snap install docker
-sudo systemctl enable --now docker
-```
-
-or the Docker.io package from the official Ubuntu repositories. 
-
-```bash
-sudo apt install -y docker.io
-sudo systemctl enable --now docker
-```
-
-### Summary
-
-Once the initial setup is complete, the only maintenance required is the potential FDE unlocking process. Everything else is automated.
+Follow the official {{<external_link "https://docs.docker.com/engine/install/ubuntu/" "Docker installation guide" >}}. This Docker installation prepares the installation of Ocelot-Cloud.

@@ -4,13 +4,13 @@ weight: 20
 no_list: true
 ---
 
-This article explains the **App Store** page in the Ocelot-Cloud GUI. The actual {{< external_link "https://store.ocelot-cloud.org/" "App Store" >}} is a separate online service where anyone can upload their own apps.
+This article explains the **App Store page** in the Ocelot-Cloud GUI. The actual {{< external_link "https://store.ocelot-cloud.org/" "App Store" >}} is a separate online service where anyone can upload their own apps.
 
 The App Store lets you search and install apps on your Ocelot-Cloud instance with just a few clicks. By default, the latest version is suggested for installation, but you have the option to install an older version.
 
 ### Official Apps
 
-When installing an official app, you should always read the according articles below as they contain setup instructions , security guidelines , information about self-registration
+When installing an official app, you should always read the relevant articles below, as they contain setup instructions, security guidelines and information about self-registration.
 
 {{< children >}}
 

@@ -39,6 +39,12 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 ```
 
+##### Additional Open Ports
+
+Please note that Docker may override these firewall rules. For example, when you install an app, it may require Docker to open additional ports in order to function properly.
+
+##### SSH Hardening
+
 Add your public key to the file `~/.ssh/authorized_keys`, then try logging in via SSH. If it works, disable password authentication.
 ```bash
 sudo sed -Ei 's/^#?PasswordAuthentication .*/PasswordAuthentication no/' /etc/ssh/sshd_config
@@ -65,7 +71,8 @@ read -rsp "LUKS passphrase: " p; echo
 printf %s "$p" | ssh -i ~/.ssh/id_ed25519 root@SERVER-IP cryptroot-unlock
 ```
 
-Reboot workflow 
+##### Reboot Workflow
+
 * reboot the server
 * on user PC: 
   * Run the remote‑unlock script.
@@ -74,6 +81,8 @@ Reboot workflow
 ### Server Reboots
 
 To ensure that the latest kernel and security updates are applied, you should reboot the server periodically, for example once a month. However, if you have FDE, you need to unlock the disk during boot, which requires you to unlock the encryption manually. You should be aware of this additional effort when choosing FDE.
+
+Reboots can be automated using a cron job.
 
 ### Install Docker
 
@@ -90,3 +99,7 @@ or the Docker.io package from the official Ubuntu repositories.
 sudo apt install -y docker.io
 sudo systemctl enable --now docker
 ```
+
+### Summary
+
+Once the initial setup is complete, the only maintenance required is the potential FDE unlocking process. Everything else is automated.

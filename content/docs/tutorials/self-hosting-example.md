@@ -6,7 +6,7 @@ This sample guide walks you through setting up a hardened Ubuntu Server host for
 
 ### Restrict Physical Access
 
-Place the device in a locked rack or drawer and disable unused USB ports in BIOS/UEFI.
+Place the device in a locked rack or drawer.
 
 ### OS Installation
 

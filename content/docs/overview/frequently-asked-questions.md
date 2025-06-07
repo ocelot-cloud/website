@@ -53,5 +53,5 @@ Migration with Ocelot-Cloud is straightforward. The key feature is the creation 
 {{< details "What hardware do I need to run Ocelot-Cloud?" >}}
 The processor must be AMD64 (x86-64). Ocelot-Cloud is engineered for resource efficiency and can run comfortably on low-end or legacy systems. Actual requirements depend on the apps you deploy. Check each app’s CPU, memory, and storage needs before sizing your hardware. When in doubt, choose a machine with extra headroom, or opt for explicitly resource-efficient apps in constrained environments.
 
-Some of Ocelot-Cloud's competitors deploy apps using virtual machines, which require hardware virtualization features like VT-x or AMD-V. These capabilities are sometimes missing in older systems or rented servers. Since Ocelot-Cloud uses Docker instead of virtual machines (VMs), it can run on a broader range of hardware without relying on virtualization support.
+Some of Ocelot-Cloud's competitors deploy apps using virtual machines, which require hardware virtualization features like VT-x or AMD-V. These capabilities are sometimes missing in older systems or rented servers. Since Ocelot-Cloud uses Docker instead of virtual machines, it can run on a broader range of hardware without relying on virtualization support.
 {{< /details >}}

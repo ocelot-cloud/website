@@ -55,3 +55,14 @@ The processor must be AMD64 (x86-64). Ocelot-Cloud is engineered for resource ef
 
 Some of Ocelot-Cloud's competitors deploy apps using virtual machines, which require hardware virtualization features like VT-x or AMD-V. These capabilities are sometimes missing in older systems or rented servers. Since Ocelot-Cloud uses Docker instead of virtual machines, it can run on a broader range of hardware without relying on virtualization support.
 {{< /details >}}
+
+{{< details "I have forgotten my Ocelot-Cloud password. How can I reset it?" >}}
+You can ask an admin to reset your account password. If you are the only admin and have lost access to your account, you can reset the password by running the following command on the server:
+
+```bash
+docker exec -i ocelotcloud_ocelotdb_ocelotdb psql -U postgres -d postgres -c "DELETE FROM users WHERE user_name = 'admin';"
+docker restart ocelotcloud
+```
+
+This will delete the admin account. When Ocelot-Cloud is restarted and no admin account exists, it will try to create a new admin account using the environment variables `INITIAL_ADMIN_NAME` and `INITIAL_ADMIN_PASSWORD`, see the Getting Started article.
+{{< /details >}}

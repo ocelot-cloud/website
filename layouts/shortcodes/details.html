@@ -1,6 +1,5 @@
-<details>
-    <summary><span class="faq-question">{{ (.Get 0) | markdownify }}</span></summary>
+<details style="--faqlink: #3a73a0;">
+    <summary style="color: var(--faqlink);"><span class="faq-question">{{ (.Get 0) | markdownify }}</span></summary>
     {{ .Inner | markdownify }}
-    <div style="margin-top: 0.5em;">
-    </div>
+    <div style="margin-top: 0.5em;"></div>
 </details>

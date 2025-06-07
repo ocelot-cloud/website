@@ -146,10 +146,12 @@ The `app.yml`:
 
 You have complete freedom in designing your app. The following recommendations are not mandatory, but can help improve the user experience and integration to Ocelot-Cloud. If you are developing an app or can influence its behavior, we recommend the following:
 
-* All relevant configuration should be done via the app’s web interface.
+* All dynamic configuration should be done via the app’s web interface.
 * On first startup, prompt the first user to create an admin account to manage the instance.
 * Self-registration should be disabled by default, with user creation handled either manually or via integration with a central authentication system (e.g. OIDC). Self-registration can then be offered as an optional feature.
 * Implement OIDC authentication to enable Ocelot-Cloud’s single sign-on (SSO). Ideally, configure OIDC via the Docker Compose environment variables, using the `${HOST}` placeholder.
+* For installation, a simple `docker compose up -d` command should suffice, without any additional manual steps being required.
+* For browser-based user interaction, there should only be one container running a web server and exposing one HTTP port. Additional containers can, of course, be used for app-internal tasks such as databases.
 
 ### Reserved Exposed Ports
 

@@ -4,7 +4,9 @@ title: "Creating Own Apps"
 
 ### App Store Requirements
 
-Any software with a web interface can become an app. You simply need to have a publicly available Docker image containing the software and follow the steps below to create an app in the App Store. When the configuration is done right and the app is installed in Ocelot-Cloud, it will handle networking, certificate handling, backups and updates in the background.
+Any software with a web interface can be turned into an app. Just provide a publicly available Docker image and follow the steps below to publish it in the App Store. Once configured and installed in Ocelot-Cloud, the platform will automatically manage networking, certificates, backups, and updates.
+
+Typical use cases include simplifying installation and maintenance by distributing your app through the Ocelot App Store. This could involve integrating existing open-source software in order to support the open-source ecosystem, or making companies' on-premises, proprietary software more accessible to customers.
 
 ### Apps and Versions
 

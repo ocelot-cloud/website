@@ -103,6 +103,3 @@ volumes:
   traefik:
   logs:
   reports:
-
-# TODO add container names
-# TODO re-enable cronjob for goaccesss, maybe do it all 6 hours?

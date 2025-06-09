@@ -24,7 +24,7 @@ services:
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
       # Uncomment for test mode. This allows detailed logging and creation of a fake certificate.
       # - "--log.level=DEBUG"
-      - "--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
+      # - "--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
     ports:
       - "443:443"
     volumes:
@@ -52,10 +52,10 @@ services:
       - "traefik.http.routers.website.entrypoints=websecure"
       - "traefik.http.routers.website.tls.certresolver=myresolver"
 
+  # for frequent renewal, add cronjob: 4 */12 * * * /usr/bin/docker compose -f /root/docker-compose.yml up -d goaccess
   goaccess:
     image: allinurl/goaccess:latest
     container_name: goaccess
-    restart: unless-stopped
     volumes:
       - logs:/logs:ro
       - reports:/reports
@@ -84,11 +84,8 @@ services:
       --ignore-panel=GEO_LOCATION \
       --ignore-panel=MIME_TYPE \
       --ignore-panel=TLS_TYPE \
-      --html-prefs='{"layout":"horizontal","showTables":true,"perPage":100}'
+      --html-prefs='{"layout":"horizontal","showTables":true,"perPage":100}' \
       -o /reports/index.html
-
-    #entrypoint: >
-    #  sh -c "echo '0 4 * * * goaccess /logs/traefik.log -o /reports/index.html --log-format=TRAEFIKCLF' | crontab - && crond -f"
 
   stats:
     image: nginx:alpine

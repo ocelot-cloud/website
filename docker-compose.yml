@@ -4,6 +4,18 @@ services:
     container_name: "traefik"
     restart: unless-stopped
     command:
+      - "--accesslog=true"
+      - "--accesslog.filepath=/logs/traefik.log"
+      - "--accesslog.format=common"
+      # don't collect any personal data
+      - "--accesslog.fields.names.ClientHost=drop"
+      - "--accesslog.fields.names.ClientAddr=drop"
+      - "--accesslog.fields.names.ClientPort=drop"
+      - "--accesslog.fields.headers.names.User-Agent=drop"
+      - "--accesslog.fields.headers.names.Referer=drop"
+      - "--accesslog.fields.names.ServiceName=drop"
+      - "--accesslog.fields.names.ServiceURL=drop"
+
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.websecure.address=:443"
@@ -12,12 +24,13 @@ services:
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
       # Uncomment for test mode. This allows detailed logging and creation of a fake certificate.
       # - "--log.level=DEBUG"
-      # - "--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
+      - "--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
     ports:
       - "443:443"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - "traefik:/letsencrypt"
+      - logs:/logs
 
   watchtower:
     image: containrrr/watchtower:1.7.1@sha256:6dd50763bbd632a83cb154d5451700530d1e44200b268a4e9488fefdfcf2b038
@@ -25,7 +38,7 @@ services:
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 43200 traefik website
+    command: --interval 43200 traefik website goaccess stats
 
   website:
     image: nginx:latest
@@ -39,5 +52,60 @@ services:
       - "traefik.http.routers.website.entrypoints=websecure"
       - "traefik.http.routers.website.tls.certresolver=myresolver"
 
+  goaccess:
+    image: allinurl/goaccess:latest
+    container_name: goaccess
+    restart: unless-stopped
+    volumes:
+      - logs:/logs:ro
+      - reports:/reports
+    entrypoint:
+    - sh
+    - -c
+    - |
+      goaccess /logs/traefik.log \
+      --log-format=TRAEFIKCLF \
+      --no-ip-validation \
+      --ignore-statics=req \
+      --max-items=200 \
+      --ignore-panel=VISITORS \
+      --ignore-panel=REQUESTS_STATIC \
+      --ignore-panel=NOT_FOUND \
+      --ignore-panel=HOSTS \
+      --ignore-panel=OS \
+      --ignore-panel=BROWSERS \
+      --ignore-panel=VIRTUAL_HOSTS \
+      --ignore-panel=REFERRERS \
+      --ignore-panel=REFERRING_SITES \
+      --ignore-panel=KEYPHRASES \
+      --ignore-panel=STATUS_CODES \
+      --ignore-panel=REMOTE_USER \
+      --ignore-panel=CACHE_STATUS \
+      --ignore-panel=GEO_LOCATION \
+      --ignore-panel=MIME_TYPE \
+      --ignore-panel=TLS_TYPE \
+      --html-prefs='{"layout":"horizontal","showTables":true,"perPage":100}'
+      -o /reports/index.html
+
+    #entrypoint: >
+    #  sh -c "echo '0 4 * * * goaccess /logs/traefik.log -o /reports/index.html --log-format=TRAEFIKCLF' | crontab - && crond -f"
+
+  stats:
+    image: nginx:alpine
+    container_name: stats
+    restart: unless-stopped
+    volumes:
+      - reports:/usr/share/nginx/html:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.stats.rule=Host(`stats.ocelot-cloud.org`)"
+      - "traefik.http.routers.stats.entrypoints=websecure"
+      - "traefik.http.routers.stats.tls.certresolver=myresolver"
+
 volumes:
   traefik:
+  logs:
+  reports:
+
+# TODO add container names
+# TODO re-enable cronjob for goaccesss, maybe do it all 6 hours?

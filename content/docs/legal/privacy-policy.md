@@ -5,13 +5,14 @@ weight: 10
 
 Last updated: 15 June 2025.
 
-This website does not collect, store, or process any personal data, such as IP addresses. We keep a minimal, anonymised access log for operational reasons. Each entry records only 
-* the timestamp (UTC), 
-* requested path and HTTP method, 
-* HTTP status, 
-* response size, 
-* response time, 
-* and an internal routing label
+This website does not collect, store, or process any personal data, such as IP addresses. We keep a minimal, anonymised access log for operational reasons. Each entry records only:
+
+* Request line (HTTP method, path, and version)
+* Status code
+* Response size
+* Request ID or sequence (just a counter)
+* Internal router/service name
+* Response time
 
 Sample log entry:
 

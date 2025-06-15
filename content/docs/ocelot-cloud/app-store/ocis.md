@@ -1,5 +1,6 @@
 ---
 title: "OCIS"
+draft: true
 ---
 
 Log in as admin with username `admin` and password `ocelot`. Immediately set a secure password:

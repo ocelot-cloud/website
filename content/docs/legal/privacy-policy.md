@@ -3,6 +3,24 @@ title: "Privacy Policy"
 weight: 10
 ---
 
-This website does not collect, store or process any personal data, such as IP addresses. We do not use cookies or other tracking technologies.
+Last updated: 15 June 2025.
 
-This website contains links to external websites. We are not responsible for the privacy practices of these sites. Please review their respective privacy policies before providing any personal information.
+This website does not collect, store, or process any personal data, such as IP addresses. We keep a minimal, anonymised access log for operational reasons. Each entry records only 
+* the timestamp (UTC), 
+* requested path and HTTP method, 
+* HTTP status, 
+* response size, 
+* response time, 
+* and an internal routing label
+
+Sample log entry:
+
+```text
+- - - [15/Jun/2025:19:34:22 +0000] "GET /docs/contact/ HTTP/2.0" 200 28212 "-" "-" 271 "website@docker" "-" 3ms
+```
+
+No visitor can be identified. These logs help us to diagnose errors, protect the service and measure aggregate traffic, such as which pages are visited the most. 
+
+All statistics are produced from the anonymised log and are publicly available {{<external_link "https://stats.ocelot-cloud.org/" "here" >}}. We do not use cookies, fingerprinting, or third-party analytics.
+
+This site contains links to external websites that we do not operate. Please review their privacy policies separately.

@@ -34,7 +34,7 @@ sudo systemctl enable --now fail2ban unattended-upgrades
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow 22/tcp
-sudo ufw allow 80/tcp # optional, if you want to use HTTP
+# sudo ufw allow 80/tcp # optional, if you want to use HTTP, but not recommended
 sudo ufw allow 443/tcp
 sudo ufw enable
 ```

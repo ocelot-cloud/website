@@ -68,6 +68,7 @@ services:
       --no-ip-validation \
       --ignore-statics=req \
       --max-items=200 \
+      --accesslog.fields.names.RequestCount=drop
       --ignore-panel=VISITORS \
       --ignore-panel=REQUESTS_STATIC \
       --ignore-panel=NOT_FOUND \

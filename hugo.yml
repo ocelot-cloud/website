@@ -8,7 +8,7 @@ module:
     - path: "github.com/google/docsy"
 
 params:
-  github_repo: "https://github.com/ocelot-cloud/docs"
+  github_repo: "https://github.com/ocelot-cloud/website"
   ui:
     themeVariant: "dark"
     showLightDarkModeMenu: true

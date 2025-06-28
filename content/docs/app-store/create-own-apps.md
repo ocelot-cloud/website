@@ -92,7 +92,7 @@ services:
           memory: 256M
 ```
 
-##### ${HOST}
+##### Placeholder: ${HOST}
 
 Some apps require the domain they are accessible at for security or compatibility reasons. As this value varies, you can use `${HOST}` as a placeholder. When an app is downloaded and started, this placeholder is automatically replaced by the HOST value defined on the Settings page of the Ocelot-Cloud.
 

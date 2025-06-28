@@ -12,7 +12,7 @@ no_list: true
 </div> 
 <br>
 
-Watch our {{< external_link "https://youtu.be/YYKnIOCQC0s" "Feature Demonstration Video on Youtube" >}}. Further resources:
+Watch our {{< external_link "https://youtu.be/YYKnIOCQC0s" "Feature Demonstration Video" >}} on Youtube. Further resources:
 * [Overview]({{< relref "overview.md" >}}): Learn what Ocelot-Cloud offers and how it works.
   * [Apps]({{< relref "overview/apps.md" >}}): Take a look at the apps that Ocelot-Cloud provides.
 * [Getting Started]({{< relref "ocelot-cloud/getting-started.md" >}}): Install Ocelot-Cloud and explore its features.

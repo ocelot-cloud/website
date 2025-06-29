@@ -14,7 +14,8 @@ The goal is to have a Community Edition whose free features meet the needs of ca
 | Certificates       | {{<checkmark>}} | {{<checkmark>}} |
 | Users              | {{<checkmark>}} | {{<checkmark>}} |
 | Public Instance    | {{<checkmark>}} | {{<checkmark>}} |
-| OIDC Server        | {{<checkmark>}} | {{<checkmark>}} |
+| Updater            | {{<checkmark>}} | {{<checkmark>}} |
+| OIDC Server        |   {{<cross>}}   | {{<checkmark>}} |
 | Groups             |   {{<cross>}}   | {{<checkmark>}} |
 | Auto Setup         |   {{<cross>}}   | {{<checkmark>}} |
 | Monitoring         |   {{<cross>}}   | {{<checkmark>}} |
@@ -44,6 +45,10 @@ Ocelot-Cloud automatically manages wildcard certificates that encrypt the networ
 ### Users
 
 Create user accounts and assign them to other people to grant them access to the apps.
+
+### Updater
+
+The Updater is a CLI tool designed for developers managing apps in the App Store. When run locally, it scans for newer versions of Docker images, applies updates, performs automated health checks and, if successful, uploads the updated app to the App Store for distribution.  This minimizes the effort required for third-party app maintenance.
 
 ### OIDC Server
 
